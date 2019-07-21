@@ -82,9 +82,9 @@
         >
           <el-option
             v-for="item in skills"
-            :key="item.value"
+            :key="item.label"
             :label="item.label"
-            :value="item.value"
+            :value="item.label"
           >
           </el-option>
         </el-select>
@@ -129,7 +129,6 @@ export default {
         company: "",
         salary: "",
         contractType: "",
-        // skills: "",
         skills: [],
         location: "",
         description: "",
@@ -273,7 +272,6 @@ export default {
     },
 
     async addJob(e) {
-      // window.f7.showPreloader();
       await this.$store.dispatch("jobs/ADD_JOB", {
         title: this.jobForm.title,
         imageUrl: this.jobForm.imageUrl,
@@ -285,7 +283,6 @@ export default {
         description: this.jobForm.description,
         isPublished: this.jobForm.isPublished
       });
-      // window.f7.hidePreloader();
     }
   }
 };

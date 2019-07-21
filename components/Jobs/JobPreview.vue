@@ -23,9 +23,9 @@
           <div
             class="taglists"
             v-for="skillItem in item.skills"
-            :key="skillItem.label"
+            :key="skillItem"
           >
-            <el-tag>{{skillItem.label}}</el-tag>
+            <el-tag>{{skillItem}}</el-tag>
           </div>
 
         </div>
