@@ -19,6 +19,7 @@
 
             </div>
             <div class="navigation">
+              <LangSwicher />
               <router-link
                 tag="li"
                 to="/addjob"
@@ -29,7 +30,6 @@
                 >Post a job</el-button>
 
               </router-link>
-              <LangSwicher />
 
             </div>
 
@@ -123,5 +123,8 @@ li {
 .navigation {
   margin-top: 10px;
   float: right;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 </style>

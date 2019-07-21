@@ -68,7 +68,8 @@ export default {
   transition: 0.3s;
   margin-bottom: 18px;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  align-items: center;
   padding: 15px;
   text-align: left;
   text-decoration: none;
@@ -112,7 +113,6 @@ export default {
     min-width: 190px;
     text-align: right;
     .loca {
-      margin-top: 20px;
       font-size: 16px;
       font-weight: 600;
     }

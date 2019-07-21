@@ -33,3 +33,10 @@ export default {
   computed: {}
 };
 </script>
+
+<style scoped>
+.langSwitcherMenu {
+  margin-right: 15px;
+}
+</style>
+

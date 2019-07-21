@@ -1,12 +1,32 @@
 <template>
   <div>
-    <h1>Single Poste</h1>
+    <div
+      class=""
+      v-for="item in jobItems"
+      :key="item.company"
+    >
+      <h1>{{ item.company }}</h1>
+
+    </div>
+
   </div>
 
 </template>
 
 <script>
-export default {};
+import { mapState, mapGetters } from "vuex";
+export default {
+  data() {
+    return {
+      newTodoTitle: "",
+      newDescription: ""
+    };
+  },
+
+  computed: mapGetters({
+    jobItems: "jobs/getJobItems"
+  })
+};
 </script>
 
 <style>
