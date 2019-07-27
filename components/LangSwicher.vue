@@ -2,8 +2,18 @@
   <div class="langSwitcherMenu">
 
     <div>
-      <button @click="changeLanguage('en')">EN</button>
-      <button @click="changeLanguage('fr')">FR</button>
+
+      <el-button
+        @click="changeLanguage('en')"
+        size="small"
+        round
+      >EN</el-button>
+      <el-button
+        @click="changeLanguage('fr')"
+        size="small"
+        round
+      >FR</el-button>
+
     </div>
   </div>
 
